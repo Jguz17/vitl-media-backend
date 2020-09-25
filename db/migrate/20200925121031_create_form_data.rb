@@ -5,7 +5,7 @@ class CreateFormData < ActiveRecord::Migration[6.0]
       t.string :email
       t.string :phone
       t.string :message
-      t.string :source, default => nil
+      t.string :source, :default => nil
 
       t.timestamps
     end
