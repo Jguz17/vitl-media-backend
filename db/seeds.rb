@@ -5,3 +5,4 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+FormData.create(name: 'John Doe', email: 'john@fake.com', phone: '1231231234', message: 'drtvygbh tfyvgbhj yvbhj')
