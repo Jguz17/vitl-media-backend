@@ -15,4 +15,9 @@ class FormDataController < ApplicationController
 
         render json: formdata
     end
+
+    def destroy
+        FormData.find(params[:id]).destroy
+        render json: { message: 'success' }
+    end
 end

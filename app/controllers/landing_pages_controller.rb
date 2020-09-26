@@ -17,4 +17,9 @@ class LandingPagesController < ApplicationController
 
         render json: landingPage
     end
+    
+    def destroy
+        LandingPage.find(params[:id]).destroy
+        render json: { message: 'success' }
+    end
 end
