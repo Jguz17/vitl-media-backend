@@ -10,9 +10,8 @@ class FormDataController < ApplicationController
         email = params[:email]
         phone = params[:phone]
         message = params[:message]
-        source = params[:source]
 
-        formdata = FormData.create(name: name, email: email, phone: phone, message: message, source: source)
+        formdata = FormData.create(name: name, email: email, phone: phone, message: message)
 
         render json: formdata
     end
