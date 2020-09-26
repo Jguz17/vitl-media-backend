@@ -13,7 +13,7 @@ class LandingPagesController < ApplicationController
         emailCheckbox = params[:emailCheckbox]
         source = params[:source]
 
-        landingPage = LandingPage.create(name: name, phone: phone, email: email, phoneCheckbox: phoneCheckbox, emailCheckbox, source: source)
+        landingPage = LandingPage.create(name: name, phone: phone, email: email, phoneCheckbox: phoneCheckbox, emailCheckbox: emailCheckbox, source: source)
 
         render json: landingPage
     end
