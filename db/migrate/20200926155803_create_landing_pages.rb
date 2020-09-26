@@ -4,8 +4,8 @@ class CreateLandingPages < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :email
       t.string :phone
-      t.string :emailCheckbox, :default => nil
-      t.string :phoneCheckbox, :default => nil
+      t.boolean :emailCheckbox, :default => nil
+      t.boolean :phoneCheckbox, :default => nil
       t.string :source
 
       t.timestamps
