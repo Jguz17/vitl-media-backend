@@ -28,8 +28,8 @@ ActiveRecord::Schema.define(version: 2020_09_26_155803) do
     t.string "name"
     t.string "email"
     t.string "phone"
-    t.string "emailCheckbox"
-    t.string "phoneCheckbox"
+    t.boolean "emailCheckbox"
+    t.boolean "phoneCheckbox"
     t.string "source"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
